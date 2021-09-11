@@ -1,0 +1,237 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&family=Work+Sans:wght@900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #2d2319;
+  font-family: "Roboto", sans-serif;
+}
+
+header {
+    background-image: url("http://placekitten.com/g/1920/768");
+    height: 768px;
+    background-repeat: no-repeat; 
+    background-position: center center;
+    
+  }
+
+h1 {
+  font-size: 4rem;
+  font-family: "Oswald", sans-serif;
+  margin-top: 1rem;
+  color: #a5834f;
+}
+
+h2 {
+  font-size: 3rem;
+  font-family: "Oswald", sans-serif;
+  color: #a5834f;
+  margin-top: 32px;
+}
+
+h3 {
+  font-size: 2rem;
+  font-family: "Oswald", sans-serif;
+  margin: 1rem 0;
+  color: #a5834f;
+}
+
+p {
+  font-size: 1.3rem;
+  font-family: "Roboto", sans-serif;
+  color: #aa926f;
+}
+
+.nav {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  background: #aa926f;
+  font-size: 24px;
+  display: flex;
+  justify-content: center;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.9);
+}
+
+.nav a {
+  display: inline-block;
+  margin: 0 2rem;
+  text-decoration: none;
+  color: #382c20;
+  line-height: 4rem;
+}
+
+.nav a:hover {
+  color: #d1c8aa;
+}
+
+.section {
+  padding: 0 85px;
+  justify-content: center;
+  align-items: center;
+}
+
+.section_title {
+  color: #b49173;
+  text-align: center;
+}
+
+.story_content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.story_content_title {
+  text-align: center;
+  color: #b49173;
+}
+
+.story_content_text {
+  color: #a68468;
+  justify-content: center;
+}
+
+.story_content_text p{
+    margin-bottom: 32px;
+  }
+
+.story_text {
+  flex-grow: 1;
+  padding: 55px;
+}
+
+.story_image {
+  display: flex;
+  flex-grow: 1;
+  align-items: center;
+}
+
+#cards {
+  display: flex;
+  flex-grow: 1;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  margin: 15px;
+  align-items: center;
+}
+
+.card_name {
+  text-align: center;
+}
+
+.card_description {
+  text-align: justify;
+}
+
+figcaption {
+  background-color: #aa926f;
+  color: #382c20;
+  text-align: center;
+  padding: 5px;
+}
+
+.img_gallery {
+  display: flex;
+  flex-grow: 1;
+  width: 100%;
+  justify-content: center;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  margin: 3px;
+}
+
+.column figure {
+  width: 100%;
+  margin-top: 3px;
+}
+
+.underline {
+  border-bottom: solid 2px #aa926f;
+  margin: auto;
+  margin-top: 30px;
+  width: 800px;
+}
+
+.contact_form{
+    display: flex;
+    justify-content: center;
+}
+
+#formulario {
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.9);
+  background-color: #aa926f;
+  max-width: 768px;
+  margin: 0, 60px;
+  position:relative;
+  padding: 10px;
+}
+
+input[type="text"],
+[type="email"],
+[type="tel"],
+select,
+textarea {
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  background: none;
+  border: none;
+  border-bottom: solid 2px #382c20;
+  color: #382c20;
+  margin: 10px 0px;
+  padding: 1px;
+  text-transform: uppercase;
+  width: 100%;
+}
+
+::-webkit-input-placeholder {
+  color: #382c20;
+}
+
+.form_buttons {
+  display: flex;
+  justify-content: center;
+}
+
+.form_button {
+  background: none;
+  border: solid 2px #382c20;
+  color: #382c20;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 1rem;
+  font-weight: bold;
+  outline: none;
+  padding: 20px 35px;
+  text-transform: uppercase;
+  margin: 0 50px;
+}
+
+.form_button:hover {
+  background: #382c20;
+  color: #a68468;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  margin: 15px;
+}
+
+.footer p{
+    font-size: 1rem;
+}
