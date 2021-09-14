@@ -180,6 +180,7 @@ figcaption {
   max-width: 350px;
   overflow: hidden;
   cursor: pointer;
+  border-radius: 12px 12px 20px 20px;
 }
 
 .img_gallery figure img {
