@@ -19,6 +19,13 @@ body {
   background-position: center center;
 }
 
+.contents {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  max-width: 1300px;
+}
+
 h1 {
   font-size: 4rem;
   font-family: "Oswald", sans-serif;
@@ -58,6 +65,8 @@ p {
   display: flex;
   justify-content: center;
   box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.9);
+  position: fixed;
+  z-index: 999999;
 }
 
 .nav a {
@@ -116,14 +125,16 @@ p {
 
 #cards {
   display: flex;
-  flex-grow: 1;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .card {
   display: flex;
   flex-direction: column;
-  margin: 15px;
   align-items: center;
+  margin: 15px;
+  width: 245px;
 }
 
 .card_name {
@@ -131,7 +142,6 @@ p {
 }
 
 .card_description {
-  text-align: justify;
 }
 
 figcaption {
@@ -145,36 +155,37 @@ figcaption {
   flex-grow: 1;
   width: 100%;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
-.img_gallery .column {
-  display: flex;
-  flex-direction: column;
-  margin: 16px;
-}
-
-.img_gallery .column figure {
-  width: 100%;
-  margin-top: 16px;
+.img_gallery figure {
+  margin: 8px 11px;
   position: relative; 
+  max-width: 350px;
+  overflow: hidden;
+  cursor: pointer;
 }
 
-.img_gallery .column figcaption {
+.img_gallery figure img {
+  max-width: 100%;
+}
+
+.img_gallery figure figcaption {
   position: absolute;
-  bottom: 0;
   left: 0;
   right: 0;
   align-items: top center;
   background-color: rgba(0, 0, 0, 0.6);
   opacity: 0;
-  transition: opacity 0.5s ease;
+  bottom: -100%;
+  transition: all 0.5s ease;
   display: flex;
   padding: 8px
 }
 
-.img_gallery .column figure:hover figcaption {
-  cursor: pointer;
-  opacity: 1;
+.img_gallery figure:hover figcaption {
+  opacity: 0.95;
+  bottom: 0;
 }
 
 .separator {
