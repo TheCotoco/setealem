@@ -124,7 +124,7 @@ p {
 .story_text {
   flex-grow: 1;
   padding: 55px;
-  max-width: 50%;
+  max-width: 60%;
 }
 
 .story_image {
@@ -156,6 +156,8 @@ p {
 }
 
 .card_description {
+  text-align: center;
+  margin-bottom: 8px;
 }
 
 figcaption {
