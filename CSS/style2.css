@@ -62,12 +62,11 @@ img {
   border: none;
 }
 
-.btn-info:hover{
+.btn-info:hover, .btn-info:focus, .btn-info:active{
   background-color: #a5834f;
   color:  #382c20;
   border: none;
 }
-
 #personagens .card {
   max-width: 180px;
 }
